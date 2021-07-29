@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "filename" : "btn6IconNextArrowPink.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "filename" : "btn6IconNextArrowPink@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "filename" : "btn6IconNextArrowPink@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

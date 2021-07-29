@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  Fitbox
+//
+//  Created by Khatib H. on 11/8/15.
+//  
+//
+
+#ifdef __OBJC__
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "NSString+J.h"
+#import "JUtils.h"
+#import "Constants.h"
+#import "AppEngine.h"
+#import "MBProgressHUD.h"
+#import "UIView+Toast.h"
+#import "UIBarButtonItem+Badge.h"
+#import "APIClient.h"
+#import "JCredentials.h"
+//#import <CoreData/CoreData.h>
+
+#endif /* PrefixHeader_pch */
+#endif

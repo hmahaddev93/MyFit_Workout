@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AauxProBold.ttf">
+            <string>AauxProBold</string>
+            <string>AauxProBold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hfU-cY-yNw" userLabel="State Selector View" customClass="StateSelectorView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcB-Il-8Cn">
+                    <rect key="frame" x="0.0" y="306" width="320" height="46"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPR-lQ-fZx">
+                            <rect key="frame" x="235" y="9" width="64" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="3gQ-nf-HGT"/>
+                                <constraint firstAttribute="height" constant="33" id="ujG-86-sdZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AauxProBold" family="Aaux ProBold" pointSize="15"/>
+                            <state key="normal" title="DONE">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionDone:" destination="hfU-cY-yNw" eventType="touchUpInside" id="JfP-0V-goJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C6-OS-DBi">
+                            <rect key="frame" x="15" y="9" width="64" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="6Te-Dd-TAx"/>
+                                <constraint firstAttribute="height" constant="33" id="dsH-Ky-fWd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AauxProBold" family="Aaux ProBold" pointSize="15"/>
+                            <state key="normal" title="CANCEL">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionCancel:" destination="hfU-cY-yNw" eventType="touchUpInside" id="X8d-FW-PpE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="8C6-OS-DBi" firstAttribute="leading" secondItem="pcB-Il-8Cn" secondAttribute="leading" constant="15" id="9MZ-88-21P"/>
+                        <constraint firstItem="8C6-OS-DBi" firstAttribute="top" secondItem="pcB-Il-8Cn" secondAttribute="top" constant="9" id="EEx-VE-n00"/>
+                        <constraint firstAttribute="trailing" secondItem="ZPR-lQ-fZx" secondAttribute="trailing" constant="21" id="dfh-IB-vhS"/>
+                        <constraint firstItem="ZPR-lQ-fZx" firstAttribute="top" secondItem="pcB-Il-8Cn" secondAttribute="top" constant="9" id="f8R-sz-6or"/>
+                        <constraint firstAttribute="height" constant="46" id="ome-Nb-bY3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KwA-g4-iCE">
+                    <rect key="frame" x="0.0" y="352" width="320" height="216"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdG-fD-EgF">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                            <connections>
+                                <outlet property="dataSource" destination="hfU-cY-yNw" id="i48-tk-zLy"/>
+                                <outlet property="delegate" destination="hfU-cY-yNw" id="DiP-Se-hXC"/>
+                            </connections>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83529411760000005" green="0.85490196080000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="a7E-T2-DN2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KwA-g4-iCE" secondAttribute="trailing" id="B3W-b9-bYM"/>
+                <constraint firstAttribute="bottom" secondItem="KwA-g4-iCE" secondAttribute="bottom" id="Bpl-5e-Uns"/>
+                <constraint firstAttribute="trailing" secondItem="pcB-Il-8Cn" secondAttribute="trailing" id="KM8-hQ-m8B"/>
+                <constraint firstItem="KwA-g4-iCE" firstAttribute="leading" secondItem="hfU-cY-yNw" secondAttribute="leading" id="aXY-hH-iHI"/>
+                <constraint firstItem="KwA-g4-iCE" firstAttribute="top" secondItem="pcB-Il-8Cn" secondAttribute="bottom" id="efg-YG-8JH"/>
+                <constraint firstItem="pcB-Il-8Cn" firstAttribute="leading" secondItem="hfU-cY-yNw" secondAttribute="leading" id="muP-C6-Ued"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="pickerView" destination="kdG-fD-EgF" id="pKL-UK-GDi"/>
+            </connections>
+            <point key="canvasLocation" x="372" y="276"/>
+        </view>
+    </objects>
+</document>

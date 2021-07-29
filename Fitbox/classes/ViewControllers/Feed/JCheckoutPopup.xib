@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AauxProBold.ttf">
+            <string>AauxProBold</string>
+        </mutableArray>
+        <mutableArray key="AauxProRegular.ttf">
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+            <string>AauxProRegular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JCheckoutPopup">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7f-gm-Zv3">
+                    <rect key="frame" x="0.0" y="298" width="320" height="270"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Order" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imS-zo-Bt9">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="27"/>
+                            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="w4f-b9-abX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIV-h2-tVu" userLabel="View - Size">
+                            <rect key="frame" x="0.0" y="27" width="320" height="40"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXL-Kh-mRJ">
+                                    <rect key="frame" x="15" y="39" width="305" height="1"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSh-oK-464">
+                                    <rect key="frame" x="15" y="0.0" width="79" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-x8-ISw">
+                                    <rect key="frame" x="122" y="0.0" width="183" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vt-30-I57">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                    <connections>
+                                        <action selector="onTouchBtnSize:" destination="iN0-l3-epB" eventType="touchUpInside" id="yh4-eU-Zzn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Qqk-TO-Le7"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEe-3W-JE3" userLabel="View - Ship To">
+                            <rect key="frame" x="0.0" y="67" width="320" height="40"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohB-So-usi">
+                                    <rect key="frame" x="15" y="39" width="305" height="1"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ship To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIT-vE-qip">
+                                    <rect key="frame" x="15" y="0.0" width="79" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbb-ET-lcS">
+                                    <rect key="frame" x="107" y="0.0" width="198" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a6-NA-0hs">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                    <connections>
+                                        <action selector="onTouchBtnShipTo:" destination="iN0-l3-epB" eventType="touchUpInside" id="s7b-F7-P86"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="foo-bI-qx9"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzv-od-uym" userLabel="View - Payment">
+                            <rect key="frame" x="0.0" y="107" width="320" height="40"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQw-4h-dXy">
+                                    <rect key="frame" x="15" y="39" width="305" height="1"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtm-Ts-l2m">
+                                    <rect key="frame" x="15" y="0.0" width="79" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XT2-vL-tR1">
+                                    <rect key="frame" x="109" y="0.0" width="196" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8y-M3-gg5">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                    <connections>
+                                        <action selector="onTouchBtnPayment:" destination="iN0-l3-epB" eventType="touchUpInside" id="rc6-b7-5wG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="09a-tg-SbP"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbO-uO-Gmh" userLabel="View - Shipping">
+                            <rect key="frame" x="0.0" y="147" width="320" height="40"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIy-f1-scR">
+                                    <rect key="frame" x="15" y="39" width="305" height="1"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shipping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJq-Sd-1tt">
+                                    <rect key="frame" x="15" y="0.0" width="79" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBX-nA-R1G">
+                                    <rect key="frame" x="108" y="0.0" width="197" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHv-xO-djq">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="sbU-JA-9aY"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3HP-9v-uMU" userLabel="View - Total">
+                            <rect key="frame" x="0.0" y="187" width="320" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd2-Sf-Uf3">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q14-D2-dOF">
+                                    <rect key="frame" x="15" y="39" width="305" height="1"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00Z-fE-WI7">
+                                    <rect key="frame" x="15" y="0.0" width="79" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXi-0v-G2C">
+                                    <rect key="frame" x="126" y="0.0" width="179" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProRegular" family="Aaux ProRegular" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="eGb-MF-qt8"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpi-wM-E3Q" userLabel="View - Add To Cart">
+                            <rect key="frame" x="0.0" y="227" width="320" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIn-Eg-ADl">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                    <fontDescription key="fontDescription" name="AauxProBold" family="Aaux ProBold" pointSize="15"/>
+                                    <state key="normal" title="ADD TO CART">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onTouchBtnAddToCart:" destination="iN0-l3-epB" eventType="touchUpInside" id="eWA-KL-nYw"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn6IconNextArrowPink" translatesAutoresizingMaskIntoConstraints="NO" id="KP0-yd-pvM">
+                                    <rect key="frame" x="280" y="0.0" width="40" height="40"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="nq5-y7-kvr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3HP-9v-uMU" firstAttribute="leading" secondItem="C7f-gm-Zv3" secondAttribute="leading" id="29W-Ts-fUi"/>
+                        <constraint firstItem="imS-zo-Bt9" firstAttribute="top" secondItem="C7f-gm-Zv3" secondAttribute="top" id="5hL-Cg-sKd"/>
+                        <constraint firstItem="dIV-h2-tVu" firstAttribute="leading" secondItem="C7f-gm-Zv3" secondAttribute="leading" id="6xD-hH-VZG"/>
+                        <constraint firstAttribute="trailing" secondItem="imS-zo-Bt9" secondAttribute="trailing" id="9WT-kW-cFg"/>
+                        <constraint firstItem="YEe-3W-JE3" firstAttribute="top" secondItem="dIV-h2-tVu" secondAttribute="bottom" id="FJg-F8-v4N"/>
+                        <constraint firstItem="Lpi-wM-E3Q" firstAttribute="leading" secondItem="C7f-gm-Zv3" secondAttribute="leading" id="IQR-Iw-8Io"/>
+                        <constraint firstItem="Lpi-wM-E3Q" firstAttribute="top" secondItem="3HP-9v-uMU" secondAttribute="bottom" id="KuZ-8N-LTc"/>
+                        <constraint firstAttribute="trailing" secondItem="SbO-uO-Gmh" secondAttribute="trailing" id="NBc-p5-03W"/>
+                        <constraint firstItem="pzv-od-uym" firstAttribute="top" secondItem="YEe-3W-JE3" secondAttribute="bottom" id="O2N-IW-eI4"/>
+                        <constraint firstAttribute="trailing" secondItem="dIV-h2-tVu" secondAttribute="trailing" id="QB4-Jx-8aM"/>
+                        <constraint firstAttribute="trailing" secondItem="3HP-9v-uMU" secondAttribute="trailing" id="Unb-oI-R3d"/>
+                        <constraint firstAttribute="height" constant="270" id="WgO-43-Qof"/>
+                        <constraint firstItem="pzv-od-uym" firstAttribute="leading" secondItem="C7f-gm-Zv3" secondAttribute="leading" id="bpS-sZ-s9I"/>
+                        <constraint firstAttribute="trailing" secondItem="pzv-od-uym" secondAttribute="trailing" id="dgN-Rx-n5x"/>
+                        <constraint firstAttribute="trailing" secondItem="Lpi-wM-E3Q" secondAttribute="trailing" id="eNf-Rm-XAY"/>
+                        <constraint firstItem="dIV-h2-tVu" firstAttribute="top" secondItem="imS-zo-Bt9" secondAttribute="bottom" id="hkG-zB-nbU"/>
+                        <constraint firstItem="YEe-3W-JE3" firstAttribute="leading" secondItem="C7f-gm-Zv3" secondAttribute="leading" id="kA3-dP-Uug"/>
+                        <constraint firstAttribute="trailing" secondItem="YEe-3W-JE3" secondAttribute="trailing" id="mdg-XU-i5K"/>
+                        <constraint firstItem="imS-zo-Bt9" firstAttribute="leading" secondItem="C7f-gm-Zv3" secondAttribute="leading" id="nk6-xV-g8p"/>
+                        <constraint firstItem="SbO-uO-Gmh" firstAttribute="leading" secondItem="C7f-gm-Zv3" secondAttribute="leading" id="nlZ-1Z-10w"/>
+                        <constraint firstItem="3HP-9v-uMU" firstAttribute="top" secondItem="SbO-uO-Gmh" secondAttribute="bottom" id="pC5-gg-5jL"/>
+                        <constraint firstItem="SbO-uO-Gmh" firstAttribute="top" secondItem="pzv-od-uym" secondAttribute="bottom" id="wE6-4z-rrk"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9b-6j-Y5M">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="298"/>
+                    <connections>
+                        <action selector="onTouchBtnCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="4lP-8j-OMc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="C7f-gm-Zv3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Q5-Kh-LIn"/>
+                <constraint firstAttribute="bottom" secondItem="C7f-gm-Zv3" secondAttribute="bottom" id="7Qc-rl-3Mb"/>
+                <constraint firstAttribute="trailing" secondItem="C7f-gm-Zv3" secondAttribute="trailing" id="HDz-Z6-dfW"/>
+                <constraint firstItem="c9b-6j-Y5M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tmy-03-lDz"/>
+                <constraint firstItem="c9b-6j-Y5M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d7L-Mj-yTz"/>
+                <constraint firstAttribute="trailing" secondItem="c9b-6j-Y5M" secondAttribute="trailing" id="gRW-Ra-nau"/>
+                <constraint firstItem="C7f-gm-Zv3" firstAttribute="top" secondItem="c9b-6j-Y5M" secondAttribute="bottom" id="kzd-x5-1rS"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="mLblAddress" destination="lbb-ET-lcS" id="geC-LY-4CM"/>
+                <outlet property="mLblPayment" destination="XT2-vL-tR1" id="sJ7-f4-ExD"/>
+                <outlet property="mLblShippingMethod" destination="nBX-nA-R1G" id="V0Y-y1-GMF"/>
+                <outlet property="mLblSize" destination="yN3-x8-ISw" id="qF4-bx-RsY"/>
+                <outlet property="mLblTotal" destination="rXi-0v-G2C" id="QvQ-Uc-6u2"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn6IconNextArrowPink" width="25" height="25"/>
+    </resources>
+</document>
